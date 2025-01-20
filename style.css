@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 8fr;
+}
+
+nav {
+    background-color: rgb(63, 119, 224);
+    color: white;
+    padding: 1rem;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 100px 300px 150px;
+}
+
+nav svg {
+    fill: white;
+}
+
+nav ul {
+    padding-left: 1rem;
+}
+
+nav ul svg {
+    width: 25px;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: 40px 120px;
+}
+
+nav a p {
+    align-self: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.dashboard-title {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    gap: 10px;
+}
+
+.dashboard-title svg {
+    width: 50px;
+}
+
+.dashboard-title h1 {
+    padding-top: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.main-navigation,
+.special-navigation {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.main-navigation {
+    grid-template-rows: repeat(6, 30px);
+    height: 200px;
+}
+
+.special-navigation {
+    grid-template-rows: repeat(3, 30px);
+}
+
+.main-navigation li,
+.special-navigation li {
+    list-style-type: none;
+}
+
+header {
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+main {
+    background-color: rgb(240, 240, 240);
+}
