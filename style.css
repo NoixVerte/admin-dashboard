@@ -91,6 +91,121 @@ header {
     background-color: white;
     z-index: 1;
     box-shadow: 0 5px 5px lightgray;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header svg {
+    width: 25px;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 3rem;
+    height: 50px;
+    padding: 1rem;
+}
+
+.searchbar-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    padding: 1rem;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    padding-right: 1rem;
+}
+
+header button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.search-btn {
+    justify-self: self-end;
+}
+
+.searchbar {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(216, 221, 230);
+    height: 30px;
+    padding-left: 1rem;
+}
+
+.notif-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.notif-btn {
+    justify-self: end;
+    padding-right: 1rem;
+}
+
+.notif-container .profile-picture {
+    justify-self: center;
+}
+
+.notif-container p {
+    padding-left: 1rem;
+}
+
+.profile-picture {
+    background-image: url(hedgehog.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns:  700px 400px;
+    gap: 400px;
+}
+
+.handle-container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+.bigger {
+    width: 75px;
+}
+
+.profile-picture.bigger {
+    grid-row: 1 / span 2;
+    justify-self: end;
+}
+
+.handle-container span {
+    justify-self: start;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.buttons-container button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(63, 119, 224);
+    border: none;
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
 }
 
 main {
